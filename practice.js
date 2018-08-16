@@ -15,7 +15,11 @@
 */
 
 //Code here
-
+var me = {
+  name: "Nathan",
+  age: 37
+}
+// alert(me.name)
 
 
 ////////// PROBLEM 2 //////////
@@ -26,7 +30,14 @@
 */
 
 //Code here
-
+var favoriteThings = {
+  band: "DTP",
+  food: "sushi",
+  person: "abrihaaxum",
+  book: "Siddhartha",
+  movie: "Tron",
+  holiday: "Halloween"
+}
 
 
 /*
@@ -34,7 +45,8 @@
 */
 
 //Code here
-
+favoriteThings.car = "Subaru"
+favoriteThings.brand = "Nike"
 
 
 /*
@@ -42,8 +54,8 @@
 */
 
 //Code here
-
-
+favoriteThings.food = "Chicken Nuggets"
+favoriteThings.book = "Harry Potter"
 
 ////////// PROBLEM 3 //////////
 
@@ -56,15 +68,17 @@
 */
 
 //Code here
-
-
+var backPack = {}
+let item = "firstPocket"
+backPack[item] = "chapstick"
+backPack.color = "red"
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
 //Code here
-
+console.log(backPack)
 
 
 /*
@@ -97,7 +111,8 @@ var user2 = {
 */
 
 //Code Here
-
+user2.name = "Tyler S. McGinnis"
+user2.email = "tyler.mcginnis@devmounta.in"
 
 
 
@@ -120,7 +135,7 @@ var user2 = {
 */
 
 //Code Here
-
+var methodCollection = {}
 
 
 /*
@@ -129,8 +144,12 @@ var user2 = {
 */
 
 //Code Here
-
-
+methodCollection.alertHello = function () {
+    alert("hello")
+  }
+methodCollection.logHello = function () {
+  console.log("hello")
+}
 
 /*
   Now call your alertHello and logHello methods.
@@ -148,9 +167,14 @@ var user2 = {
 */
 
 //Code Here
-
-
-
+function makePerson (name, birthday, ssn) {
+  return {
+    name,
+    birthday,
+    ssn
+  }
+}
+makePerson("Nathan", "June", 528)
 ////////// PROBLEM 7 //////////
 
 /*
@@ -159,5 +183,7 @@ var user2 = {
 */
 
 //Code Here
-
-
+function makeCard (cardNumber, expirationDate, securityCode){
+  return {}
+};
+makeCard()
